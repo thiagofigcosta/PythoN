@@ -1,0 +1,39 @@
+This is Pytho{\}
+
+Running over Python 3.14.6
+Several  tabs            here
+Is 13 greater than 14?
+NEVER
+
+10 reasons why you should use Pytho{\}
+0 Because I rate : and tab
+1 Because I rate : and tab
+2 Because I rate : and tab
+3 Because I rate : and tab
+4 Because I rate : and tab
+5 Because I rate : and tab
+6 Because I rate : and tab
+7 Because I rate : and tab
+8 Because I rate : and tab
+9 Because I rate : and tab
+
+Yes, we do support dictionaries
+Pytho{\} Rocks
+This came from a ext file
+elif now is fixed
+
+dictionaries appended inline to array are now supported
+help us to improve send issues
+Workaround Oriented Programming for the win
+
+When you comment on the file the following: '# Pytho{\}: Ignore file'
+Pytho{\}'ll ignore the file and it will be interpreted as regular Python file
+
+I can count up to 10:
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+It is also possible to mix the syntaxes when the regular python syntax is in between '# Pytho{\}: Start regular Python' and '# Pytho{\}: End regular Python' lines
+
+Inline ifs working
+Print inside function - Inline if()s working
