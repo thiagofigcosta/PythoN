@@ -5,7 +5,7 @@ import sys
 import basic_external_file as ext
 import basic_external_regularpy_file as py
 
-print('This is Pytho{\}')
+print('This is Pytho{\\}')
 print('')
 print('Running over Python {}.{}.{}'.format(sys.version_info[0],sys.version_info[1],sys.version_info[2]))
 print('Several  tabs            here')
@@ -17,7 +17,7 @@ if 13 > 14{ # comments after curly brackets
     print('NEVER')
 }
 print('')
-print('10 reasons why you should use Pytho{\}')
+print('10 reasons why you should use Pytho{\\}')
 for i in range(10){
 print ("{} Because I rate : and tab".format(i)) # no ident here
 }
@@ -25,7 +25,7 @@ print ("{} Because I rate : and tab".format(i)) # no ident here
 empty_dictionary = {}
 single_line_dictionary={"do we support dictionaries?":"Yes, we do support dictionaries"}
 multi_line_dictionary={
-    "Pytho{\}":"Rocks"
+    "Pytho{\\}":"Rocks"
 }
 
 print()
@@ -54,7 +54,7 @@ py.print_lines()
 # Pytho{\}: Start regular Python
 for i in range(2):
     print()
-text='It is also possible to mix the syntaxes when the regular python syntax is in between \'# Pytho{\}: Start regular Python\' and \'# Pytho{\}: End regular Python\' lines'
+text='It is also possible to mix the syntaxes when the regular python syntax is in between \'# Pytho{\\}: Start regular Python\' and \'# Pytho{\\}: End regular Python\' lines'
 out=''
 for c in list(text):
     out+=c

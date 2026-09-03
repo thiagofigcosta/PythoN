@@ -4,9 +4,9 @@
 
 def print_lines():
     print()
-    text='When you comment on the file the following: \'# Pytho{\}: Ignore file\''
+    text='When you comment on the file the following: \'# Pytho{\\}: Ignore file\''
     print(text)
-    print('Pytho{\}\'ll ignore the file and it will be interpreted as regular Python file')
+    print('Pytho{\\}\'ll ignore the file and it will be interpreted as regular Python file')
     print()
     print('I can count up to 10:')
     count=[]

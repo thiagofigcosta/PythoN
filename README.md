@@ -29,4 +29,8 @@ Each run transpiles into its own `tempfile.mkdtemp` directory rather than a fixe
 
 The runtime still has no pip dependencies - that hasn't changed. Running the test suite needs `pytest` (`pip install -e '.[dev]'`, then `python3 -m pytest`).
 
+There is an example per language feature in [examples/](examples/), with a short index
+in [examples/README.md](examples/README.md). Every one of them runs, and a test asserts
+that they all still do.
+
 Known limitations are listed in [docs/limitations.md](docs/limitations.md). Design notes and rationale for the Phase 1 hardening pass are in [docs/2026-09-03-phase1-design.md](docs/2026-09-03-phase1-design.md).
