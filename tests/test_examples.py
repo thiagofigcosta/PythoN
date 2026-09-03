@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import pathlib
+import re
 
 import pytest
 
@@ -25,3 +26,14 @@ def test_every_example_runs(example: pathlib.Path):
 def test_no_example_emits_a_warning(example: pathlib.Path):
     result = run_vendored("examples/{}".format(example.name))
     assert "Warning" not in result.stderr, result.stderr
+
+
+def test_the_examples_readme_lists_every_example():
+    # A README that drifts from the directory is worse than none: it tells a reader
+    # a file exists when it does not, or hides one that does.
+    readme = (pathlib.Path(__file__).parent.parent / "examples" / "README.md").read_text()
+    listed = set(re.findall(r"`([a-z_]+\.py)`", readme))
+    present = {path.name for path in EXAMPLES}
+    assert listed == present, "README and examples/ disagree: {}".format(
+        sorted(listed ^ present)
+    )
